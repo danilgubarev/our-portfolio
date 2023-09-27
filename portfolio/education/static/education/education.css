@@ -1,0 +1,11 @@
+h1{
+    color: darkorange;
+    font-size: medium;
+    text-decoration: underline;
+    text-shadow: 10px;
+}
+.speech{
+    color: yellow;
+    font-style: oblique;
+    font-size: larger;
+}

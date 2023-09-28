@@ -4,28 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Our-Portfolio</title>
     <link rel="stylesheet" href="{% static 'main/main.css' %}">
-    {% block links %}
-    {% endblock %}
+
 </head>
 <body>
     
-    <header>
-        <a href="{% url 'main' %}">Головна сторiнка</a>
-        <a href="{% url 'achievement' %}">Досягнення</a>
-        <a href="{% url 'hobbi' %}">Хоббі</a>
-        <a href="{% url 'leisure' %}">Дозвiлля</a>
-        <a href="{% url 'education' %}">Освіта</a>
-    </header>
-    <main>
-        {% block content %}
-            <h1>Головна сторiнка</h1>
-            
-        {% endblock %}  
+    <header class="site-header">
+        <div class="header-container">
+            <nav>
+                <a href="{% url 'main' %}">Головна сторiнка</a>
+                <a href="{% url 'achievement' %}">Досягнення</a>
+                <a href="{% url 'hobbi' %}">Хоббі</a>
+                <a href="{% url 'leisure' %}">Дозвiлля</a>
+                <a href="{% url 'education' %}">Освіта</a>
+            </nav>
+        </div>
+            </header>
+    <main class="main-content">
+{% block content %}
+    <h1>
+        Вітаємо на головній сторінці нашого сайту!
+    </h1>
+
+    <h3>
+        Тут ви побачите информацію о розробниках та посилання на github аккаунти розробників сайту,
+        де ви зможете познайомитись детальніше з цим та іншими проектами.
+    </h3>
+
+    <div class="maininfo">
+        <h2>
+            Розробник 1, та водночас тімлід команди - Данило Губарев, 15 років
+        </h2>
+        <img src="{% static 'main/images/image1.png' %}" alt="Image">
+        <p>
+            GitHub аккаунт - <a href="https://github.com/danilgubarev" class="gitlink">Клікни</a>
+        </p>
+    </div>
+
+    <div class="maininfo">
+        <h2>
+            Розробник 2 - Алексей Тарасов, 14 років
+        </h2>
+
+        <img src="{% static 'main/images/image2.png' %}" alt="Image">
+        <p>
+            GitHub аккаунт - <a href="https://github.com/AlexeyTarasov77" class="gitlink">Клікни</a>
+        </p>
+    </div>
+
+    <div class="maininfo">
+        <h2>
+            Розробник 3 - Віталій Феденко, 14 років
+        </h2>
+
+        <img src="{% static 'main/images/image3.png' %}" alt="Image">
+        <p>
+            GitHub аккаунт - <a href="https://github.com/VitaliiFedenko" class="gitlink">Клікни</a>
+        </p>
+    </div>
+
+    <div class="maininfo">
+        <h2>
+            Розробник 4 - Ольга Бачуріна, 17 років
+        </h2>
+
+        <img src="{% static 'main/images/image4.png' %}" alt="Image">
+        <p>
+            GitHub аккаунт - <a href="https://github.com/Olhabd" class="gitlink">Клікни</a>
+        </p>
+    </div>
+{% endblock %}  
+
     </main>
     <footer>
-        
+        <p>
+            Сайт створено за підтримкою: <a href="https://www.worldit.academy/">WorldItAcademy</a>
+        </p>
     </footer>
 </body>
 </html>

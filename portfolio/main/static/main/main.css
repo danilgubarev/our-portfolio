@@ -13,6 +13,7 @@
     color: #fff;
     padding: 20px 0;
     margin-bottom: 20px; 
+    
 }
 
 .main-content {
@@ -33,13 +34,14 @@ h1 {
     font-weight: bold; 
     color: #3498db; 
     margin-bottom: 10px; 
+    text-align: center;
 }
 
 
 h3 {
     font-size: 24px; 
     font-weight: bold;
-    color: #e74c3c; 
+    color: blue; 
     margin-top: 20px; 
     margin-bottom: 10px; 
 }
@@ -74,5 +76,6 @@ h2 {
 .gitlink:hover {
     background-color: #2df800; /* Цвет фона при наведении курсора */
 }
+
 
 

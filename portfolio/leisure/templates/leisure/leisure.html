@@ -1,30 +1,30 @@
 {% extends 'main/main.html' %}
 {% load static %}
 
+{% block links %}
+<link rel="stylesheet" href="{% static 'main/main.css' %}">
+{% endblock %}
+
 
 {% block content %}
 
-<header>
-    <h1>Наша </h1>
-</header>
+
 <main>
-    <p id="l">Олексій:</p>
-    <p class="speech">"У вільний час гуляю на вулиці, катаюсь на велосипеді, граю з друзями у пабг, іноді практикуюсь у програмуванні, додатково знайомлячись з новими бібліотеками і т.д."</p>
-    <img class="img" src="{% static 'leisure/image/bike.jpg'%}" alt="bike">
-    <p id="d">Данило:</p>
-    <p class="speech">"У вільний час я гуляю з друзями, катаюсь на велосипеді, та іноді граю у баскетбол"</p>
-    <img class="img" src="{% static 'leisure/image/kino.jpg' %}" alt="kino">
-    <p id="o">Ольга:</p> 
-    <p class="speech">"Свій вільний час я проводжу на прогулянці з друзями. Також переглядаю фільми/серіали, читаю книжки, іноді малюю"</p>
-    <img class="img" src="{% static 'leisure/image/bascetball.jpg' %}" alt="bascetball">
-    <p id="v">Віталій:</p>
-    <p class="speech">"У вільний час я граю з друзями в ігри та працюю з ними на різних блогерів"</p>
+    <h1 style="text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Дозвілля</h1>
+    <h2 id="l" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Олексій:</h2>
+    <p style="font-size: larger; color: rgb(14, 198, 134); font-style: oblique; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif" class="speech">"У вільний час гуляю на вулиці, катаюсь на велосипеді, граю з друзями у пабг, іноді практикуюсь у програмуванні, додатково знайомлячись з новими бібліотеками і т.д."</p>
+    <img style="width: 400 px; height: 250 px;" class="img" src="{% static 'leisure/image/bike.jpg'%}" alt="bike">
+    <h2 id="d" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Данило:</h2>
+    <p style="font-size: larger;color: rgb(14, 198, 134); font-style: oblique; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif" class="speech" >"У вільний час я гуляю з друзями, катаюсь на велосипеді, та іноді граю у баскетбол"</p>
+    <img class="img" src="{% static 'leisure/image/bascetball.jpg' %}" alt="kino">
+    
+    <h2 id="o" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Ольга:</h2> 
+    <p style="font-size: larger;color: rgb(14, 198, 134); font-style: oblique; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif" class="speech">"Свій вільний час я проводжу на прогулянці з друзями. Також переглядаю фільми/серіали, читаю книжки, іноді малюю"</p>
+    <img class="img" src="{% static 'leisure/image/kino.jpg' %}" alt="bascetball">
+    <h2 id="v" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Віталій:</h2h2>
+    <p style="font-size: large; color: rgb(14, 198, 134); font-style: oblique; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif" class="speech">"У вільний час я граю з друзями в ігри та працюю з ними на різних блогерів"</p>
     <img class="img" src="{% static 'leisure/image/games.jpg' %}" alt="games">
 </main>
-<footer>
-    
-</footer>
 
-    <h1>Дозвiлля</h1>
 
 {% endblock %}

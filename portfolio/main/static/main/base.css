@@ -1,0 +1,80 @@
+.site-header a {
+    color: #fff; /* Цвет ссылок в шапке */
+    text-decoration: none; /* Убрать подчеркивание ссылок */
+    margin-right: 20px; /* Отступ между ссылками */
+}
+
+.site-header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px 0;
+    margin-bottom: 20px; 
+    
+}
+
+
+.header-container {
+    text-align: center; 
+}
+
+.site-header nav {
+    display: inline-block; 
+}
+
+.footerdiv {
+    background-color: #3498db;
+    padding: 50px; 
+    margin-top: 150px;
+}
+
+.footerdiv p {
+    font-size: large;
+    color: rgb(6, 255, 139);
+}
+
+.footerdiv a {
+    text-decoration: none; 
+    color: wheat
+}
+
+h1 {
+    font-size: 36px; 
+    font-weight: bold; 
+    color: #3498db; 
+    margin-bottom: 10px; 
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: bold;
+}
+
+
+h3 {
+    font-size: 24px; 
+    font-weight: bold;
+    color: blue; 
+    margin-top: 50px; 
+    margin-bottom: 10px; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+p {
+    font-size: 16px; 
+    color: #555; 
+    line-height: 1.5; 
+    margin-bottom: 20px; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2 {
+    font-size: 28px; 
+    font-weight: bold; 
+    color: #279eae; 
+    margin-top: 100px; 
+    margin-bottom: 10px; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+img {
+    border-radius: 5%;
+}

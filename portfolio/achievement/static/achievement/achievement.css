@@ -1,0 +1,29 @@
+
+p {
+    font-size: 18px; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #262626c9; 
+    line-height: 1.5; 
+    margin-bottom: 20px; 
+}
+
+.infobutton {
+    display: inline-block;
+    padding: 1px 1px; /* Размеры отступов кнопки */
+    background-color: #0074D9; /* Цвет фона кнопки */
+    color: #fff; /* Цвет текста на кнопке */
+    text-decoration: none; /* Убрать подчеркивание текста ссылки */
+    border: none; /* Убрать границу кнопки */
+    border-radius: 4px; /* Скругленные углы */
+    cursor: pointer; /* Смена курсора при наведении */
+    margin-bottom: 20px; 
+}
+
+.infobutton:hover {
+    background-color: #FF851B; /* Цвет фона при наведении курсора */
+}
+
+
+
+

@@ -1,5 +1,64 @@
-{% extends 'main/main.html' %}
+{% extends 'main/base.html' %}
 {% load static %}
-{% block content %}
-<h1>Освіта</h1>
+
+{% block links %}
+<link rel="stylesheet" href="{% static 'main/base.css' %}">
+<link rel="stylesheet" href="{% static 'education/education.css' %}">
+{% endblock %}
+
+{% block content %} 
+    <main>
+        <h1>
+            Наша освіта
+        </h1>
+        
+        <hr>
+        
+        <h2>
+            Олексій:
+        </h2>
+
+        <h3>
+            "Вчився у школі №75. На разі вчусь у Словакії м. Братислава у 9 класі"
+        </h3>
+        
+        <img class="img" src="{% static 'education/image/school2.jpg' %}" alt="">
+        <hr>
+        <h2>
+            Данило:
+        </h2>
+        <h3>
+            "Вчусь у ліцеї №142, паралельно ходжу на курси програмування"
+        </h3>
+
+        <img class="img" src="{% static 'education/image/school3.jpg' %}" alt="">
+
+        <hr>
+
+        <h2>
+            Ольга:
+        </h2>
+        
+        <h3>
+            "Навчаюсь у школі №46 м.Дніпра та на курсах з програмування"
+        </h3>
+
+        <img class="img" src="{% static 'education/image/school1.jpg' %}" alt="">
+        
+        <hr>
+
+        <h2>
+            Віталій:
+        </h2>
+
+        <h3>
+            "Навчаюсь в Україні у ліцеї №5, та у Польщі. Ходжу на курси з програмування та на заняття з гітари"
+        </h3>
+
+        <img class="img" src="{% static 'education/image/school4.jpg' %}" alt="">
+
+        <hr>
+
+    </main>
+
 {% endblock %}

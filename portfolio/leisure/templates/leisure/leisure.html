@@ -1,7 +1,70 @@
-{% extends 'main/main.html' %}
+{% extends 'main/base.html' %}
 {% load static %}
+
+{% block links %}
+<link rel="stylesheet" href="{% static 'main/base.css' %}">
+<link rel="stylesheet" href="{% static 'leisure/leisure.css' %}">
+{% endblock %}
 
 
 {% block content %}
-    <h1>Дозвiлля</h1>
+
+
+<main>
+    <h1>
+        Дозвілля
+    </h1>
+
+    <hr>
+
+    <h2>
+        Олексій:
+    </h2>
+
+    <p class="p-leisure">
+        "У вільний час гуляю на вулиці, катаюсь на велосипеді, граю з друзями у пабг, іноді практикуюсь у програмуванні, додатково знайомлячись з новими бібліотеками і т.д."
+    </p>
+
+    <img class="img" src="{% static 'leisure/image/bike.jpg'%}" alt="bike">
+
+    <hr>
+
+    <h2>
+        Данило:
+    </h2>
+    
+    <p class="p-leisure">
+        "У вільний час я гуляю з друзями, катаюсь на велосипеді, та іноді граю у баскетбол"
+    </p>
+    
+    
+
+    <img class="img" src="{% static 'leisure/image/bascetball.jpg' %}" alt="kino">
+
+    <hr>
+    
+    <h2>
+        Ольга:
+    </h2> 
+
+    <p class="p-leisure">
+        "Свій вільний час я проводжу на прогулянці з друзями. Також переглядаю фільми/серіали, читаю книжки, іноді малюю"
+    </p>
+    
+    <img class="img" src="{% static 'leisure/image/kino.jpg' %}" alt="bascetball">
+
+    <hr>
+
+    <h2>
+        Віталій:
+    </h2>
+    
+    <p class="p-leisure">"У вільний час я граю з друзями в ігри та працюю з ними на різних блогерів"</p>
+    <img class="img" src="{% static 'leisure/image/games.jpg' %}" alt="games">
+
+    <hr>
+
+</main>
+
+
 {% endblock %}

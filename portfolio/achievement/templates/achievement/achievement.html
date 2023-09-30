@@ -1,14 +1,12 @@
-{% extends 'main/main.html' %}
+{% extends 'main/base.html' %}
 {% load static %}
 
-{% block content %}
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our-Portfolio</title>
+{% block links %}
     <link rel="stylesheet" href="{% static 'achievement/achievement.css' %}">
-</head>
+    <link rel="stylesheet" href="{% static 'main/base.css' %}">
+{% endblock %}
+
+{% block content %}
 
     <h1>
         На цій сторінці ти дізнаєшься про досягнення в програмуванні команди розробників, ім'я яких ти можешь дізнатися на головній сторінці!
@@ -32,6 +30,7 @@
             pygame: <a href="https://pypi.org/project/pygame/" class="infobutton">Клікни щоб дізнатися детальніше</a>,<br>
             qrcode: <a href="https://pypi.org/project/qrcode/" class="infobutton">Клікни щоб дізнатися детальніше</a><br>
         </p>
+        <hr>
     </div>
         
     
@@ -54,6 +53,7 @@
             Зараз знайомлюсь з направленням веб-розробки backend та frontend такі инструменти як: <br>
             python фреймворк - <a href="https://www.djangoproject.com/" class="infobutton">Django</a>, мову розмітки html та css, та ще одну мову програмування JavaScript.
         </p>
+        <hr>
     </div>
 
 
@@ -73,7 +73,7 @@
             pygame:  <a href="https://pypi.org/project/pygame/" class="infobutton">Клікни щоб дізнатися детальніше</a>,<br>
             qrcode: <a href="https://pypi.org/project/qrcode/" class="infobutton">Клікни щоб дізнатися детальніше</a><br>
         </p>
-    
+        <hr>
     </div>
 
     <div>
@@ -90,11 +90,7 @@
             telebot: <a href="https://pypi.org/project/pyTelegramBotAPI/" class="infobutton">Клікни щоб дізнатися детальніше</a>,<br>
             pygame: <a href="https://pypi.org/project/pygame/" class="infobutton">Клікни щоб дізнатися детальніше</a><br>
         </p>
-
+        <hr>
     </div>
     
-
-    
-
-
 {% endblock %}

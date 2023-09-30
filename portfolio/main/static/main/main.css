@@ -1,64 +1,8 @@
 .maininfo {
     margin: 20px;
+    margin-bottom: 50px;
 }
 
-.site-header a {
-    color: #fff; /* Цвет ссылок в шапке */
-    text-decoration: none; /* Убрать подчеркивание ссылок */
-    margin-right: 20px; /* Отступ между ссылками */
-}
-
-.site-header {
-    background-color: #3498db;
-    color: #fff;
-    padding: 20px 0;
-    margin-bottom: 20px; 
-}
-
-.main-content {
-    background-color: #fff; 
-    padding: 20px;
-}
-
-.header-container {
-    text-align: center; 
-}
-
-.site-header nav {
-    display: inline-block; 
-}
-
-h1 {
-    font-size: 36px; 
-    font-weight: bold; 
-    color: #3498db; 
-    margin-bottom: 10px; 
-}
-
-
-h3 {
-    font-size: 24px; 
-    font-weight: bold;
-    color: #e74c3c; 
-    margin-top: 20px; 
-    margin-bottom: 10px; 
-}
-
-
-p {
-    font-size: 16px; 
-    color: #555; 
-    line-height: 1.5; 
-    margin-bottom: 20px; 
-}
-
-h2 {
-    font-size: 28px; 
-    font-weight: bold; 
-    color: #279eae; 
-    margin-top: 20px; 
-    margin-bottom: 10px; 
-}
 
 .gitlink {
     display: inline-block;
@@ -74,5 +18,6 @@ h2 {
 .gitlink:hover {
     background-color: #2df800; /* Цвет фона при наведении курсора */
 }
+
 
 

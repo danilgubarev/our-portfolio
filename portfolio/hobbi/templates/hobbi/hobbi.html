@@ -1,6 +1,59 @@
-{% extends 'main/main.html' %}
+{% extends 'main/base.html' %}
 {% load static %}
 
+{% block links %}
+    <link rel="stylesheet" href="{% static 'main/base.css' %}">
+{% endblock %}
+
 {% block content %}
-    <h1>Хобі</h1>
+    <h1>
+        Хоббі команди
+    </h1>
+    <hr>
+    <h2>
+        Феденко Віталій
+    </h2>
+    <h3>
+        Програмування, Гітара, Малювання текстур та персонажів.
+    </h3>
+    
+    <img width="450px" height="250px" src="{% static 'hobbi/images/3.jpg' %}" alt="">
+    <img width="135px" height="250px" src="{% static 'hobbi/images/2.png' %}" alt="">
+    
+    <hr>
+    <h2>
+        Данило Губарев
+    </h2>
+    <h3>
+        Програмуванням та зал
+    </h3>
+    
+    <img width="450px" height="250px" src="{% static 'hobbi/images/6.jpg' %}" alt="">
+    <img width="450px" height="250px" src="{% static 'hobbi/images/7.png' %}" alt="">
+    
+    <hr>
+    
+    <h2>
+        Олексiй Тарасов
+    </h2>
+    <h3>
+        Програмуванням, воркаут та баскетбол
+    </h3>
+    
+    <img width="250px" height="250px" src="{% static 'hobbi/images/5.png' %}" alt="">
+    <img width="250px" height="250px" src="{% static 'hobbi/images/4.jpg' %}" alt="">
+    
+    <hr>
+    
+    <h2>
+        Ольга Бачуріна
+    </h2>
+    
+    <h3>
+        Програмуванням, танці
+    </h3>
+    
+    <img width="250px" height="250px" src="{% static 'hobbi/images/1.jpeg' %}" alt="">
+    <img width="450px" height="250px" src="{% static 'hobbi/images/7.png' %}" alt="">
+
 {% endblock %}

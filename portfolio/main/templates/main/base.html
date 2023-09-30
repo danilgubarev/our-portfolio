@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    
+    {% block links %}
+        <link rel="stylesheet" href="{% static 'main/base.css' %}">
+    {% endblock %}
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-container">
+            <nav>
+                <a href="{% url 'main' %}">Головна сторiнка</a>
+                <a href="{% url 'achievement' %}">Досягнення</a>
+                <a href="{% url 'hobbi' %}">Хоббі</a>
+                <a href="{% url 'leisure' %}">Дозвiлля</a>
+                <a href="{% url 'education' %}">Освіта</a>
+            </nav>
+        </div>
+    </header>  
+
+    <main>
+        <div>
+            {% block content %}
+            {% endblock %}
+        </div>
+    </main>
+
+    <footer>
+        <div class="footerdiv">
+            <p>
+                Сайт створено за підтримки: <a href="https://www.worldit.academy/">WorldItAcademy</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

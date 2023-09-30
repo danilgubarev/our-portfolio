@@ -1,32 +1,64 @@
-{% extends 'main/main.html' %}
+{% extends 'main/base.html' %}
 {% load static %}
 
 {% block links %}
-<link rel="stylesheet" href="{% static 'main/main.css' %}">
+<link rel="stylesheet" href="{% static 'main/base.css' %}">
+<link rel="stylesheet" href="{% static 'education/education.css' %}">
 {% endblock %}
 
-{% block content %}
+{% block content %} 
+    <main>
+        <h1>
+            Наша освіта
+        </h1>
+        
+        <hr>
+        
+        <h2>
+            Олексій:
+        </h2>
 
-<header>
-    <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-style: bold;">Наша освіта</h1>
-</header>
-<main>
-    <h2 id="l" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-style: bold;">Олексій:</h2>
-    <h3 class="speech" style="color: #279eae;  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-style: oblique;">"Вчився у школі №75. На разі вчусь у Словакії м. Братислава у 9 класі"</p>
-    <img class="img" src="{% static 'education/image/school.jpg' %}" alt="">
-    <h2 id="d" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  font-style: bold;">Данило:</h2>
-    <h3 class="speech" style="color: #279eae; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-style: oblique;">"Вчусь у ліцеї №142, паралельно ходжу на курси програмування"</h3>
-    <img class="img" src="{% static 'education/image/programming.jpg' %}" alt="">
-    <h2 id="o" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  font-style: bold;">Ольга:</h2>
-    <h3 class="speech" style="color: #279eae; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-style: oblique;">"Навчаюсь у школі №46 м.Дніпра та на курсах з програмування"</h3>
-    <img class="img" src="{% static 'education/image/programming.jpg' %}" alt="">
-    <h2 id="v" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  font-style: bold;">Віталій:</h2>
-    <h3 class="speech" style="color: #279eae; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-style: oblique;">"Навчаюсь в Україні у ліцеї №5, та у Польщі. Ходжу на курси з програмування та на заняття з гітари"</h3>
-    <img class="img" src="{% static 'education/image/programming.jpg' %}" alt="">
-</main>
-<footer>
-    
-</footer>
+        <h3>
+            "Вчився у школі №75. На разі вчусь у Словакії м. Братислава у 9 класі"
+        </h3>
+        
+        <img class="img" src="{% static 'education/image/school2.jpg' %}" alt="">
+        <hr>
+        <h2>
+            Данило:
+        </h2>
+        <h3>
+            "Вчусь у ліцеї №142, паралельно ходжу на курси програмування"
+        </h3>
 
+        <img class="img" src="{% static 'education/image/school3.jpg' %}" alt="">
+
+        <hr>
+
+        <h2>
+            Ольга:
+        </h2>
+        
+        <h3>
+            "Навчаюсь у школі №46 м.Дніпра та на курсах з програмування"
+        </h3>
+
+        <img class="img" src="{% static 'education/image/school1.jpg' %}" alt="">
+        
+        <hr>
+
+        <h2>
+            Віталій:
+        </h2>
+
+        <h3>
+            "Навчаюсь в Україні у ліцеї №5, та у Польщі. Ходжу на курси з програмування та на заняття з гітари"
+        </h3>
+
+        <img class="img" src="{% static 'education/image/school4.jpg' %}" alt="">
+
+        <hr>
+
+    </main>
 
 {% endblock %}

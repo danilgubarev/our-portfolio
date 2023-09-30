@@ -1,15 +1,5 @@
-h1{
-    color: darkorange;
-    font-size: medium;
-    text-decoration: underline;
-    text-shadow: 10px;
-}
-.speech{
-    color: yellow;
-    font-style: oblique;
-    font-size: larger;
-}
-.img{
-    width: 200px;
-    height: 100px;
+.img {
+    width: 1000px;
+    height: 500px;
+
 }

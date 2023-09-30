@@ -1,41 +1,27 @@
+{% extends 'main/base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    
-    {% block links %}
-    <link rel="stylesheet" href="{% static 'main/main.css' %}">
-    {% endblock %}
-</head>
-<body>
-    
-    <header class="site-header">
-        <div class="header-container">
-            <nav>
-            <a href="{% url 'main' %}">Головна сторiнка</a>
-            <a href="{% url 'achievement' %}">Досягнення</a>
-            <a href="{% url 'hobbi' %}">Хоббі</a>
-            <a href="{% url 'leisure' %}">Дозвiлля</a>
-            <a href="{% url 'education' %}">Освіта</a>
-            </nav>
-        </div>
-    </header>
+
+{% block links %}
+<link rel="stylesheet" href="{% static 'main/main.css' %}">
+<link rel="stylesheet" href="{% static 'main/base.css' %}">
+{% endblock %}
+
+
+{% block content %}    
     <main>
-        {% block content %}
-            <h1 style="text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; margin-bottom: 70px">
+        
+            <h1>
                 Вітаємо на головній сторінці нашого сайту!
             </h1>
         
-            <h3 style="color: #1578ba; text-decoration-style: wavy;">
+            <h3>
+
                 Тут ви побачите информацію про розробників та посилання на їх github аккаунти,
                 де ви зможете ознайомитися детальніше з цим та іншими проєктами.
             </h3>
         
             <div class="maininfo">
-                <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                <h2>
                     Розробник 1, та водночас тімлід команди - Данило Губарев, 15 років
                 </h2>
                 <img src="{% static 'main/images/image1.png' %}" alt="Image" style="border-radius: 5%;">
@@ -45,7 +31,7 @@
             </div>
         
             <div class="maininfo">
-                <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                <h2>
                     Розробник 2 - Олексiй Тарасов, 14 років
                 </h2>
         
@@ -56,7 +42,7 @@
             </div>
         
             <div class="maininfo">
-                <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                <h2>
                     Розробник 3 - Віталій Феденко, 14 років
                 </h2>
         
@@ -67,7 +53,7 @@
             </div>
         
             <div class="maininfo">
-                <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                <h2>
                     Розробник 4 - Ольга Бачуріна, 17 років
                 </h2>
         
@@ -76,16 +62,7 @@
                     GitHub аккаунт - <a href="https://github.com/Olhabd" class="gitlink">Клікни</a>
                 </p>
             </div>
-            
+        </main>
         {% endblock %}  
-    </main>
 
-    <footer>
-        <div style="background-color: #3498db; padding: 50px; margin-top: 50px">
-            <p style="font-size: large; color: azure;">
-                Сайт створено за підтримки: <a href="https://www.worldit.academy/" style="text-decoration: none; color: wheat">WorldItAcademy</a>
-            </p>
-        </div>
-    </footer>
-</body>
-</html>
+

@@ -16,5 +16,13 @@
     background-color: #2df800; /* Цвет фона при наведении курсора */
 }
 
+.maininfo {
+    border: 4.5px;
+    border-style: solid;
+    border-color: purple;
+    box-shadow: 0px 0px 15px 7px blueviolet;
+
+}
+
 
 

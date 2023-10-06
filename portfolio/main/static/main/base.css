@@ -1,15 +1,25 @@
+body {
+    background-image: url(https://phonoteka.org/uploads/posts/2021-03/1616367306_39-p-fon-dlya-saita-43.jpg);
+}
+
 .site-header a {
     color: #fff; /* Цвет ссылок в шапке */
     text-decoration: none; /* Убрать подчеркивание ссылок */
-    margin-right: 20px; /* Отступ между ссылками */
+    margin-right: 40px; /* Отступ между ссылками */
+    font-size: 20px;
+    display: inline-block; /* Для применения transform */
+    transition: transform 0.3s ease; /* Длительность анимации и функция ускорения */
 }
 
 .site-header {
-    background-color: #3498db;
+    background-color: mediumslateblue;
     color: #fff;
     padding: 20px 0;
     margin-bottom: 20px; 
-    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 
@@ -22,36 +32,41 @@
 }
 
 .footerdiv {
-    background-color: #3498db;
+    position: relative;
+    width: 1642px;
+    background-color: mediumslateblue;
     padding: 50px; 
+    margin-left: -20px;
     margin-top: 150px;
+    margin-bottom: -20px;
 }
 
 .footerdiv p {
-    font-size: large;
-    color: rgb(6, 255, 139);
+    font-size: larger;
+    color: rgb(255, 196, 85);
 }
 
 .footerdiv a {
     text-decoration: none; 
-    color: wheat
+    color: gold
 }
 
 h1 {
     font-size: 36px; 
     font-weight: bold; 
-    color: #3498db; 
+    color: #00d9ff; 
     margin-bottom: 10px; 
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: bold;
+    margin-top: 70px;
 }
 
 
 h3 {
     font-size: 24px; 
     font-weight: bold;
-    color: blue; 
+    color: aquamarine; 
     margin-top: 50px; 
     margin-bottom: 10px; 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -60,7 +75,7 @@ h3 {
 
 p {
     font-size: 16px; 
-    color: #555; 
+    color: #c5c5c5; 
     line-height: 1.5; 
     margin-bottom: 20px; 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -69,7 +84,7 @@ p {
 h2 {
     font-size: 28px; 
     font-weight: bold; 
-    color: #279eae; 
+    color: royalblue; 
     margin-top: 100px; 
     margin-bottom: 10px; 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -77,4 +92,23 @@ h2 {
 
 img {
     border-radius: 5%;
+}
+
+main {
+    text-align: center;
+}
+
+header a:hover {
+    transform: scale(1.2); /* Увеличение размера при наведении */
+    text-decoration: underline; /* Подчеркивание текста при наведении */
+}
+
+a {
+    display: inline-block; /* Для применения transform */
+    transition: transform 0.3s ease; /* Длительность анимации и функция ускорения */
+    text-decoration: none;
+}
+
+a:hover {
+    transform: scale(1.05); /* Увеличение размера при наведении */
 }
